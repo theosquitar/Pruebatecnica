@@ -45,13 +45,12 @@ class Persona {
       
       console.log("\nDetalles de los Jugadores:");
       this.jugadores.forEach(jugador => {
-        jugador.getDetalles();
-        console.log("---");
+      jugador.getDetalles();
+      console.log("---");
       });
-    }
-  }
+    } }
   
-  // Crear jugadores
+ // Creación de objetos Persona, Jugador y Entrenador
   let jugadores = [
     new Jugador("Juan", "Pérez", 25, "Portero"),
     new Jugador("Ana", "García", 22, "Defensa"),
@@ -59,13 +58,12 @@ class Persona {
     new Jugador("María", "López", 24, "Delantero")
   ];
   
-  // Crear entrenador
+ 
   let entrenador = new Entrenador("Carlos", "Ruiz", 40, 15);
-  
-  // Crear equipo
+
   let equipo = new Equipo(entrenador, jugadores);
   
-  // Mostrar detalles del equipo
   console.log("Detalles del Equipo:");
+
   equipo.getDetalles();
   
